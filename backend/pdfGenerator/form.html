@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generate Invoice</title>
+</head>
+<body>
+    <form action="127.0.0.1/generate_invoice" method="POST">
+        <h3>Client Information</h3>
+        Company Name: <input type="text" name="company_name"><br>
+        Person Name: <input type="text" name="person_name"><br>
+        Person Email: <input type="email" name="person_email"><br>
+        Grade: <input type="text" name="grade"><br>
+        School: <input type="text" name="school"><br>
+
+        <h3>Items</h3>
+        <div>
+            Item Title: <input type="text" name="item_title[]"><br>
+            Item Charge: <input type="number" name="item_charge[]"><br>
+        </div>
+
+        <button type="submit">Generate Invoice</button>
+    </form>
+</body>
+</html>
